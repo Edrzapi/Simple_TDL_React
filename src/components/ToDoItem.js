@@ -1,12 +1,33 @@
-// src/components/TodoItem.js
-
 import React from 'react';
 
-const TodoItem = ({ todo, index, toggleCompletion, removeTodo }) => {
+const TodoItem = ({ 
+  todo, index, toggleCompletion, removeTodo, editTodo, 
+  editingIndex, editingText, setEditingText, saveEdit, cancelEdit 
+}) => {
   return (
-    <li style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
-      <span onClick={() => toggleCompletion(index)}>{todo.text}</span>
-      <button onClick={() => removeTodo(index)}>Delete</button>
+    <li className="todo-item">
+      {editingIndex === index ? (
+        <>
+          <input 
+            type="text" 
+            value={editingText} 
+            onChange={(e) => setEditingText(e.target.value)} 
+          />
+          <div className="toDoButtons">
+          <button className="save" onClick={saveEdit}>Save</button>
+          <button className="cancel" onClick={cancelEdit}>Cancel</button>
+          </div></>
+      ) : (
+        <>
+          <span onClick={() => toggleCompletion(index)}>
+            {todo.text}
+          </span>
+          <div className="toDoButtons">
+            <button className="edit" onClick={() => editTodo(index)}>Edit</button>
+            <button className="delete" onClick={() => removeTodo(index)}>Delete</button>
+          </div>
+        </>
+      )}
     </li>
   );
 };

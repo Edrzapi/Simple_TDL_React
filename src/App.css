@@ -41,3 +41,48 @@ li span {
 li span:hover {
   text-decoration: underline;
 }
+/* Todo Items */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.todo-item span {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+/* Button container for alignment */
+.todo-item .toDoButtons {
+  display: flex;
+  gap: 5px; 
+}
+
+.todo-item button {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.todo-item button.edit {
+  background-color: #4CAF50;
+}
+
+.todo-item button.save {
+  background-color: #4CAF50;
+}
+
+.todo-item button.delete {
+  background-color: #f44336;
+}
+
+.todo-item button.cancel {
+  background-color: #f44336;
+}

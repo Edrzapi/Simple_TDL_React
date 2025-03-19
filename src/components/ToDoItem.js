@@ -1,4 +1,5 @@
 import React from 'react';
+import "../style/TodoStyle.css";
 
 const TodoItem = ({ 
   todo, index, toggleCompletion, removeTodo, editTodo, 

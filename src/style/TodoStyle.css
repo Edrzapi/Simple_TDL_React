@@ -1,0 +1,99 @@
+/* General Todo List Styling */
+.todo-container {
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  .todo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .todo-input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-todo-btn {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-todo-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* List Styling */
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .todo-item {
+    width: 100%;  /* Match parent width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Text */
+  .todo-item span {
+    margin-right: 10px;
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  
+  /* Button Container */
+  .todo-item .toDoButtons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  /* Buttons */
+  .todo-item button {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .todo-item button.edit,
+  .todo-item button.save {
+    background-color: #4CAF50;
+  }
+  
+  .todo-item button.delete,
+  .todo-item button.cancel {
+    background-color: #f44336;
+  }
+  
+  .todo-item button:hover {
+    opacity: 0.8;
+  }
+  

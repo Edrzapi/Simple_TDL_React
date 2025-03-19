@@ -5,14 +5,19 @@
   text-align: center;
 }
 
+.centered {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; 
+  flex-direction: column; 
+}
+
 input[type='text'] {
   padding: 10px;
   margin-right: 10px;
   width: 200px;
-}
-
-button {
-  padding: 10px;
 }
 
 ul {
@@ -25,64 +30,10 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid #ccc;
   margin: 5px 0;
 }
 
 li button {
   padding: 5px 10px;
   cursor: pointer;
-}
-
-li span {
-  cursor: pointer;
-}
-
-li span:hover {
-  text-decoration: underline;
-}
-/* Todo Items */
-.todo-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  background-color: #f9f9f9;
-}
-
-.todo-item span {
-  cursor: pointer;
-  flex-grow: 1;
-}
-
-/* Button container for alignment */
-.todo-item .toDoButtons {
-  display: flex;
-  gap: 5px; 
-}
-
-.todo-item button {
-  padding: 5px 10px;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-
-.todo-item button.edit {
-  background-color: #4CAF50;
-}
-
-.todo-item button.save {
-  background-color: #4CAF50;
-}
-
-.todo-item button.delete {
-  background-color: #f44336;
-}
-
-.todo-item button.cancel {
-  background-color: #f44336;
 }

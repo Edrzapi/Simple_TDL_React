@@ -1,7 +1,7 @@
 // src/components/TodoForm.js
 
 import React, { useState } from "react";
-
+import "../style/TodoStyle.css";
 const TodoForm = ({ addTodo }) => {
   const [todoText, setTodoText] = useState(""); // Text state
   const [error, setError] = useState(""); // Error state
